@@ -1,22 +1,347 @@
 {
   "collection": "ai_engineering_knowledge",
   "embedding_model": "embeddinggemma",
-  "documents_processed": 4,
-  "chunks_generated": 59,
-  "collection_count": 59,
+  "documents_processed": 36,
+  "chunks_generated": 325,
+  "collection_count": 325,
   "chunk_size": 1400,
   "chunk_overlap": 220,
   "domains": {
+    "deep_learning": 30,
+    "llmops": 17,
+    "machine_learning": 35,
+    "mlops": 23,
+    "python": 161,
     "pytorch": 4,
     "reinforcement_learning": 55
   },
   "sources": {
+    "deep_learning_autograd": 10,
+    "deep_learning_neural_networks": 8,
+    "deep_learning_optimization": 12,
+    "llmops_tracing": 8,
+    "llmops_rag_evaluation": 9,
+    "ml_cross_validation": 9,
+    "ml_model_selection": 9,
+    "ml_pipelines": 8,
+    "ml_supervised_learning": 9,
+    "mlops_mlflow_model_registry": 8,
+    "mlops_model_serving": 9,
+    "mlops_mlflow_tracking": 6,
+    "python_clean_boundaries": 7,
+    "python_dependency_injection": 9,
+    "python_asyncio_production": 9,
+    "python_concurrent_futures": 9,
+    "python_threads_processes": 8,
+    "python_data_model": 7,
+    "python_decorators_descriptors": 7,
+    "python_exceptions_context_managers": 8,
+    "python_iterators_generators": 10,
+    "python_operational_error_handling": 7,
+    "python_structured_logging": 7,
+    "python_dependency_management_uv": 8,
+    "python_pyproject": 7,
+    "python_memory_management": 7,
+    "python_profiling": 8,
+    "python_secure_services": 9,
+    "pytest_parametrization_contracts": 8,
+    "pytest_fixtures_engineering": 9,
+    "python_protocols_generics": 8,
+    "python_type_system": 9,
     "pytorch_basics": 4,
     "gymnasium_docs": 6,
     "pytorch_dqn": 35,
     "torchrl_docs": 14
   },
   "documents": [
+    {
+      "path": "data/raw/deep_learning/pytorch/autograd.md",
+      "source_id": "deep_learning_autograd",
+      "title": "Automatic Differentiation with PyTorch",
+      "domain": "deep_learning",
+      "topic": "autograd",
+      "url": "https://docs.pytorch.org/docs/stable/notes/autograd.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/deep_learning/pytorch/neural_networks.md",
+      "source_id": "deep_learning_neural_networks",
+      "title": "Neural Network Engineering with PyTorch",
+      "domain": "deep_learning",
+      "topic": "neural_networks",
+      "url": "https://docs.pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/deep_learning/pytorch/optimization.md",
+      "source_id": "deep_learning_optimization",
+      "title": "Optimization and Training Stability",
+      "domain": "deep_learning",
+      "topic": "optimization",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/llmops/observability/tracing.md",
+      "source_id": "llmops_tracing",
+      "title": "Tracing and Observability for LLM Applications",
+      "domain": "llmops",
+      "topic": "tracing",
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "data/raw/llmops/rag/evaluation.md",
+      "source_id": "llmops_rag_evaluation",
+      "title": "Evaluation of Retrieval-Augmented Generation Systems",
+      "domain": "llmops",
+      "topic": "rag_evaluation",
+      "url": "https://www.deepset.ai/blog/rag-evaluation",
+      "license": "engineering_synthesis"
+    },
+    {
+      "path": "data/raw/machine_learning/sklearn/cross_validation.md",
+      "source_id": "ml_cross_validation",
+      "title": "Cross-Validation Without Leakage",
+      "domain": "machine_learning",
+      "topic": "cross_validation",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/machine_learning/sklearn/model_selection.md",
+      "source_id": "ml_model_selection",
+      "title": "Model Selection and Hyperparameter Engineering",
+      "domain": "machine_learning",
+      "topic": "model_selection",
+      "url": "https://scikit-learn.org/stable/model_selection.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/machine_learning/sklearn/pipelines.md",
+      "source_id": "ml_pipelines",
+      "title": "Leakage-Safe Machine Learning Pipelines",
+      "domain": "machine_learning",
+      "topic": "pipelines",
+      "url": "https://scikit-learn.org/stable/modules/compose.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/machine_learning/sklearn/supervised_learning.md",
+      "source_id": "ml_supervised_learning",
+      "title": "Supervised Learning Engineering Foundations",
+      "domain": "machine_learning",
+      "topic": "supervised_learning",
+      "url": "https://scikit-learn.org/stable/supervised_learning.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/mlops/mlflow/model_registry.md",
+      "source_id": "mlops_mlflow_model_registry",
+      "title": "Model Registry and Lifecycle Governance",
+      "domain": "mlops",
+      "topic": "model_registry",
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "data/raw/mlops/mlflow/model_serving.md",
+      "source_id": "mlops_model_serving",
+      "title": "Reliable Model Serving Architecture",
+      "domain": "mlops",
+      "topic": "model_serving",
+      "url": "https://mlflow.org/docs/latest/ml/deployment/",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "data/raw/mlops/mlflow/tracking.md",
+      "source_id": "mlops_mlflow_tracking",
+      "title": "Experiment Tracking with MLflow",
+      "domain": "mlops",
+      "topic": "experiment_tracking",
+      "url": "https://mlflow.org/docs/latest/ml/tracking/",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "data/raw/python/architecture/clean_boundaries.md",
+      "source_id": "python_clean_boundaries",
+      "title": "Clean Architectural Boundaries in Python AI Systems",
+      "domain": "python",
+      "topic": "software_architecture",
+      "url": "https://docs.python.org/3.11/tutorial/modules.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/architecture/dependency_injection.md",
+      "source_id": "python_dependency_injection",
+      "title": "Dependency Injection and Composition Roots in Python",
+      "domain": "python",
+      "topic": "software_architecture",
+      "url": "https://docs.python.org/3.11/tutorial/classes.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/concurrency/asyncio.md",
+      "source_id": "python_asyncio_production",
+      "title": "Asyncio for Production Services",
+      "domain": "python",
+      "topic": "asynchronous_concurrency",
+      "url": "https://docs.python.org/3.11/library/asyncio.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/concurrency/concurrent_futures.md",
+      "source_id": "python_concurrent_futures",
+      "title": "Concurrent Futures for Managed Task Execution",
+      "domain": "python",
+      "topic": "executor_concurrency",
+      "url": "https://docs.python.org/3.11/library/concurrent.futures.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/concurrency/threads_processes.md",
+      "source_id": "python_threads_processes",
+      "title": "Threads and Processes in Python Systems",
+      "domain": "python",
+      "topic": "parallelism",
+      "url": "https://docs.python.org/3.11/library/concurrency.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/language/data_model.md",
+      "source_id": "python_data_model",
+      "title": "Python Data Model for Production Systems",
+      "domain": "python",
+      "topic": "language_runtime",
+      "url": "https://docs.python.org/3.11/reference/datamodel.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/language/decorators_descriptors.md",
+      "source_id": "python_decorators_descriptors",
+      "title": "Decorators and Descriptors in Python",
+      "domain": "python",
+      "topic": "metaprogramming",
+      "url": "https://docs.python.org/3.11/howto/descriptor.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/language/exceptions_context_managers.md",
+      "source_id": "python_exceptions_context_managers",
+      "title": "Exceptions and Context Managers in Production Python",
+      "domain": "python",
+      "topic": "error_handling_and_resources",
+      "url": "https://docs.python.org/3.11/reference/compound_stmts.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/language/iterators_generators.md",
+      "source_id": "python_iterators_generators",
+      "title": "Iterators, Generators, and Streaming Python",
+      "domain": "python",
+      "topic": "iteration_and_streaming",
+      "url": "https://docs.python.org/3.11/reference/expressions.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/observability/error_handling.md",
+      "source_id": "python_operational_error_handling",
+      "title": "Operational Error Handling in Python Services",
+      "domain": "python",
+      "topic": "reliability",
+      "url": "https://docs.python.org/3.11/tutorial/errors.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/observability/structured_logging.md",
+      "source_id": "python_structured_logging",
+      "title": "Structured Logging for Production Python Systems",
+      "domain": "python",
+      "topic": "observability",
+      "url": "https://docs.python.org/3.11/library/logging.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/packaging/dependency_management.md",
+      "source_id": "python_dependency_management_uv",
+      "title": "Reproducible Dependency Management with uv",
+      "domain": "python",
+      "topic": "dependency_management",
+      "url": "https://docs.astral.sh/uv/concepts/projects/dependencies/",
+      "license": "Apache-2.0-MIT"
+    },
+    {
+      "path": "data/raw/python/packaging/pyproject.md",
+      "source_id": "python_pyproject",
+      "title": "Modern pyproject.toml Design",
+      "domain": "python",
+      "topic": "packaging",
+      "url": "https://packaging.python.org/en/latest/guides/writing-pyproject-toml/",
+      "license": "MIT"
+    },
+    {
+      "path": "data/raw/python/performance/memory_management.md",
+      "source_id": "python_memory_management",
+      "title": "Memory Management for Python and AI Workloads",
+      "domain": "python",
+      "topic": "memory",
+      "url": "https://docs.python.org/3.11/library/tracemalloc.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/performance/profiling.md",
+      "source_id": "python_profiling",
+      "title": "Profiling and Performance Engineering in Python",
+      "domain": "python",
+      "topic": "performance",
+      "url": "https://docs.python.org/3.11/library/profile.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/security/secure_python_services.md",
+      "source_id": "python_secure_services",
+      "title": "Secure Engineering for Python AI Services",
+      "domain": "python",
+      "topic": "security",
+      "url": "https://docs.python.org/3.11/library/security_warnings.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/testing/parametrization_contracts.md",
+      "source_id": "pytest_parametrization_contracts",
+      "title": "Parametrized and Contract Testing with Pytest",
+      "domain": "python",
+      "topic": "testing_contracts",
+      "url": "https://docs.pytest.org/en/stable/how-to/parametrize.html",
+      "license": "MIT"
+    },
+    {
+      "path": "data/raw/python/testing/pytest_fixtures.md",
+      "source_id": "pytest_fixtures_engineering",
+      "title": "Pytest Fixtures for Reliable Python Systems",
+      "domain": "python",
+      "topic": "testing",
+      "url": "https://docs.pytest.org/en/stable/explanation/fixtures.html",
+      "license": "MIT"
+    },
+    {
+      "path": "data/raw/python/typing/protocols_generics.md",
+      "source_id": "python_protocols_generics",
+      "title": "Protocols and Generics for Extensible Python Systems",
+      "domain": "python",
+      "topic": "typing_architecture",
+      "url": "https://docs.python.org/3.11/library/typing.html",
+      "license": "PSF-2.0"
+    },
+    {
+      "path": "data/raw/python/typing/type_system.md",
+      "source_id": "python_type_system",
+      "title": "Python Type System for Large Codebases",
+      "domain": "python",
+      "topic": "typing",
+      "url": "https://docs.python.org/3.11/library/typing.html",
+      "license": "PSF-2.0"
+    },
     {
       "path": "data/raw/pytorch/pytorch_basics.md",
       "source_id": "pytorch_basics",
