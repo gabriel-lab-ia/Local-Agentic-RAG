@@ -30,6 +30,10 @@ SUPPORTED_DOMAINS = {
     "mlops",
     "llmops",
     "agentic_ai",
+    "cybersecurity",
+    "linux_security",
+    "ml_security",
+    "ai_security",
 }
 
 CHUNK_SIZE = 1400

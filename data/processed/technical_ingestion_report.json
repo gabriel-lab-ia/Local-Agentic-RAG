@@ -1,30 +1,82 @@
 {
   "collection": "ai_engineering_knowledge",
   "embedding_model": "embeddinggemma",
-  "documents_processed": 36,
-  "chunks_generated": 325,
-  "collection_count": 325,
+  "documents_processed": 84,
+  "chunks_generated": 757,
+  "collection_count": 757,
   "chunk_size": 1400,
   "chunk_overlap": 220,
   "domains": {
+    "ai_security": 108,
+    "cybersecurity": 108,
     "deep_learning": 30,
+    "linux_security": 108,
     "llmops": 17,
     "machine_learning": 35,
+    "ml_security": 108,
     "mlops": 23,
     "python": 161,
     "pytorch": 4,
     "reinforcement_learning": 55
   },
   "sources": {
+    "ai_security_agent_authorization": 9,
+    "ai_security_excessive_agency": 9,
+    "ai_security_model_dos": 9,
+    "ai_security_memory_poisoning": 9,
+    "ai_security_observability": 9,
+    "ai_security_insecure_output_handling": 9,
+    "ai_security_sensitive_information": 9,
+    "ai_security_indirect_prompt_injection": 9,
+    "ai_security_prompt_injection": 9,
+    "ai_security_rag_poisoning": 9,
+    "ai_security_supply_chain": 9,
+    "ai_security_secure_tool_use": 9,
+    "cybersecurity_least_privilege": 9,
+    "cybersecurity_api_security": 9,
+    "cybersecurity_threat_modeling": 9,
+    "cybersecurity_security_engineering": 9,
+    "cybersecurity_nist_csf": 9,
+    "cybersecurity_authentication_authorization": 9,
+    "cybersecurity_incident_response": 9,
+    "cybersecurity_secrets_management": 9,
+    "cybersecurity_secure_by_design": 9,
+    "cybersecurity_software_supply_chain": 9,
+    "cybersecurity_security_testing": 9,
+    "cybersecurity_vulnerability_management": 9,
     "deep_learning_autograd": 10,
     "deep_learning_neural_networks": 8,
     "deep_learning_optimization": 12,
+    "linux_security_capabilities": 9,
+    "linux_security_container_host": 9,
+    "linux_security_audit": 9,
+    "linux_security_permissions": 9,
+    "linux_security_namespaces": 9,
+    "linux_security_lsm": 9,
+    "linux_security_selinux_apparmor": 9,
+    "linux_security_no_new_privileges": 9,
+    "linux_security_ssh": 9,
+    "linux_security_landlock": 9,
+    "linux_security_seccomp": 9,
+    "linux_security_systemd": 9,
     "llmops_tracing": 8,
     "llmops_rag_evaluation": 9,
     "ml_cross_validation": 9,
     "ml_model_selection": 9,
     "ml_pipelines": 8,
     "ml_supervised_learning": 9,
+    "ml_security_checkpoint_safety": 9,
+    "ml_security_dataset_provenance": 9,
+    "ml_security_robust_evaluation": 9,
+    "ml_security_adversarial_ml": 9,
+    "ml_security_evasion": 9,
+    "ml_security_model_extraction": 9,
+    "ml_security_membership_inference": 9,
+    "ml_security_model_inversion": 9,
+    "ml_security_model_supply_chain": 9,
+    "ml_security_threat_modeling": 9,
+    "ml_security_backdoors": 9,
+    "ml_security_data_poisoning": 9,
     "mlops_mlflow_model_registry": 8,
     "mlops_model_serving": 9,
     "mlops_mlflow_tracking": 6,
@@ -55,6 +107,222 @@
   },
   "documents": [
     {
+      "path": "data/raw/ai_security/agents/agent_authorization.md",
+      "source_id": "ai_security_agent_authorization",
+      "title": "Authorization Architecture for AI Agents",
+      "domain": "ai_security",
+      "topic": "agent_authorization",
+      "url": "https://csrc.nist.gov/projects/zero-trust-architecture",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/agents/excessive_agency.md",
+      "source_id": "ai_security_excessive_agency",
+      "title": "Excessive Agency in AI Agents",
+      "domain": "ai_security",
+      "topic": "excessive_agency",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/availability/model_denial_of_service.md",
+      "source_id": "ai_security_model_dos",
+      "title": "Model Denial of Service and Resource Exhaustion",
+      "domain": "ai_security",
+      "topic": "model_denial_of_service",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/memory/memory_poisoning.md",
+      "source_id": "ai_security_memory_poisoning",
+      "title": "Agent Memory Poisoning and Cross-Session Integrity",
+      "domain": "ai_security",
+      "topic": "memory_poisoning",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/observability/security_observability.md",
+      "source_id": "ai_security_observability",
+      "title": "Security Observability for RAG and AI Agents",
+      "domain": "ai_security",
+      "topic": "ai_security_observability",
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/output_security/insecure_output_handling.md",
+      "source_id": "ai_security_insecure_output_handling",
+      "title": "Secure Handling of LLM Outputs",
+      "domain": "ai_security",
+      "topic": "insecure_output_handling",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/privacy/sensitive_information_disclosure.md",
+      "source_id": "ai_security_sensitive_information",
+      "title": "Sensitive Information Disclosure in AI Systems",
+      "domain": "ai_security",
+      "topic": "sensitive_information_disclosure",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/prompt_security/indirect_prompt_injection.md",
+      "source_id": "ai_security_indirect_prompt_injection",
+      "title": "Indirect Prompt Injection through Retrieved Content",
+      "domain": "ai_security",
+      "topic": "indirect_prompt_injection",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/prompt_security/prompt_injection.md",
+      "source_id": "ai_security_prompt_injection",
+      "title": "Prompt Injection in LLM Applications",
+      "domain": "ai_security",
+      "topic": "prompt_injection",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/rag_security/rag_poisoning.md",
+      "source_id": "ai_security_rag_poisoning",
+      "title": "RAG Knowledge-Base and Retrieval Poisoning",
+      "domain": "ai_security",
+      "topic": "rag_poisoning",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/supply_chain/ai_supply_chain.md",
+      "source_id": "ai_security_supply_chain",
+      "title": "AI and LLM Supply-Chain Security",
+      "domain": "ai_security",
+      "topic": "ai_supply_chain",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ai_security/tools/secure_tool_use.md",
+      "source_id": "ai_security_secure_tool_use",
+      "title": "Secure Tool Use for LLMs and Agents",
+      "domain": "ai_security",
+      "topic": "secure_tool_use",
+      "url": "https://genai.owasp.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/access_control/least_privilege.md",
+      "source_id": "cybersecurity_least_privilege",
+      "title": "Least Privilege and Privilege Separation",
+      "domain": "cybersecurity",
+      "topic": "least_privilege",
+      "url": "https://csrc.nist.gov/glossary/term/least_privilege",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/api_security/api_security.md",
+      "source_id": "cybersecurity_api_security",
+      "title": "API Security for AI and Data Services",
+      "domain": "cybersecurity",
+      "topic": "api_security",
+      "url": "https://owasp.org/API-Security/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/architecture/threat_modeling.md",
+      "source_id": "cybersecurity_threat_modeling",
+      "title": "Threat Modeling and Trust Boundaries",
+      "domain": "cybersecurity",
+      "topic": "threat_modeling",
+      "url": "https://www.cisa.gov/securebydesign",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/foundations/security_engineering.md",
+      "source_id": "cybersecurity_security_engineering",
+      "title": "Security Engineering Fundamentals",
+      "domain": "cybersecurity",
+      "topic": "security_engineering",
+      "url": "https://www.nist.gov/cyberframework",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/governance/nist_csf.md",
+      "source_id": "cybersecurity_nist_csf",
+      "title": "Cybersecurity Risk Management with NIST CSF",
+      "domain": "cybersecurity",
+      "topic": "risk_management",
+      "url": "https://www.nist.gov/cyberframework",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/identity/authentication_authorization.md",
+      "source_id": "cybersecurity_authentication_authorization",
+      "title": "Authentication, Authorization, and Identity Boundaries",
+      "domain": "cybersecurity",
+      "topic": "identity_access_management",
+      "url": "https://pages.nist.gov/800-63-3/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/incident_response/incident_response.md",
+      "source_id": "cybersecurity_incident_response",
+      "title": "Security Incident Response",
+      "domain": "cybersecurity",
+      "topic": "incident_response",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/secrets/secrets_management.md",
+      "source_id": "cybersecurity_secrets_management",
+      "title": "Secrets Management for Production Systems",
+      "domain": "cybersecurity",
+      "topic": "secrets_management",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/secure_design/secure_by_design.md",
+      "source_id": "cybersecurity_secure_by_design",
+      "title": "Secure by Design and Secure by Default",
+      "domain": "cybersecurity",
+      "topic": "secure_by_design",
+      "url": "https://www.cisa.gov/securebydesign",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/supply_chain/software_supply_chain.md",
+      "source_id": "cybersecurity_software_supply_chain",
+      "title": "Software Supply-Chain Security",
+      "domain": "cybersecurity",
+      "topic": "software_supply_chain",
+      "url": "https://slsa.dev/spec/v1.0/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/testing/security_testing.md",
+      "source_id": "cybersecurity_security_testing",
+      "title": "Security Testing and Abuse-Case Validation",
+      "domain": "cybersecurity",
+      "topic": "security_testing",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/cybersecurity/vulnerability_management/vulnerability_management.md",
+      "source_id": "cybersecurity_vulnerability_management",
+      "title": "Vulnerability Management as an Engineering Loop",
+      "domain": "cybersecurity",
+      "topic": "vulnerability_management",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "license": "reference-only"
+    },
+    {
       "path": "data/raw/deep_learning/pytorch/autograd.md",
       "source_id": "deep_learning_autograd",
       "title": "Automatic Differentiation with PyTorch",
@@ -80,6 +348,114 @@
       "topic": "optimization",
       "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
       "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/linux_security/capabilities/capabilities.md",
+      "source_id": "linux_security_capabilities",
+      "title": "Linux Capabilities and Privilege Decomposition",
+      "domain": "linux_security",
+      "topic": "linux_capabilities",
+      "url": "https://man7.org/linux/man-pages/man7/capabilities.7.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/containers/container_host_security.md",
+      "source_id": "linux_security_container_host",
+      "title": "Container and Host Security Boundaries",
+      "domain": "linux_security",
+      "topic": "container_security",
+      "url": "https://kubernetes.io/docs/concepts/security/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/detection/audit_detection.md",
+      "source_id": "linux_security_audit",
+      "title": "Linux Audit and Detection Engineering",
+      "domain": "linux_security",
+      "topic": "linux_audit",
+      "url": "https://man7.org/linux/man-pages/man8/auditd.8.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/identity/permissions.md",
+      "source_id": "linux_security_permissions",
+      "title": "Linux Users, Groups, Ownership, and Permissions",
+      "domain": "linux_security",
+      "topic": "linux_permissions",
+      "url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/isolation/namespaces.md",
+      "source_id": "linux_security_namespaces",
+      "title": "Linux Namespaces and Isolation Boundaries",
+      "domain": "linux_security",
+      "topic": "linux_namespaces",
+      "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/mandatory_access_control/linux_security_modules.md",
+      "source_id": "linux_security_lsm",
+      "title": "Linux Security Modules",
+      "domain": "linux_security",
+      "topic": "linux_security_modules",
+      "url": "https://docs.kernel.org/security/lsm.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/mandatory_access_control/selinux_apparmor.md",
+      "source_id": "linux_security_selinux_apparmor",
+      "title": "SELinux and AppArmor Policy Engineering",
+      "domain": "linux_security",
+      "topic": "selinux_apparmor",
+      "url": "https://docs.kernel.org/admin-guide/LSM/index.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/process_security/no_new_privileges.md",
+      "source_id": "linux_security_no_new_privileges",
+      "title": "The Linux no_new_privs Security Boundary",
+      "domain": "linux_security",
+      "topic": "no_new_privs",
+      "url": "https://docs.kernel.org/userspace-api/no_new_privs.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/remote_access/ssh_hardening.md",
+      "source_id": "linux_security_ssh",
+      "title": "SSH Hardening and Administrative Access",
+      "domain": "linux_security",
+      "topic": "ssh_hardening",
+      "url": "https://man.openbsd.org/sshd_config",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/sandboxing/landlock.md",
+      "source_id": "linux_security_landlock",
+      "title": "Landlock for Unprivileged Process Sandboxing",
+      "domain": "linux_security",
+      "topic": "landlock",
+      "url": "https://docs.kernel.org/userspace-api/landlock.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/sandboxing/seccomp.md",
+      "source_id": "linux_security_seccomp",
+      "title": "Seccomp System-Call Filtering",
+      "domain": "linux_security",
+      "topic": "seccomp",
+      "url": "https://docs.kernel.org/userspace-api/seccomp_filter.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/linux_security/service_hardening/systemd_hardening.md",
+      "source_id": "linux_security_systemd",
+      "title": "Systemd Service Hardening",
+      "domain": "linux_security",
+      "topic": "systemd_hardening",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html",
+      "license": "reference-only"
     },
     {
       "path": "data/raw/llmops/observability/tracing.md",
@@ -134,6 +510,114 @@
       "topic": "supervised_learning",
       "url": "https://scikit-learn.org/stable/supervised_learning.html",
       "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/ml_security/artifacts/checkpoint_safety.md",
+      "source_id": "ml_security_checkpoint_safety",
+      "title": "Safe Model Checkpoints and Serialization",
+      "domain": "ml_security",
+      "topic": "checkpoint_security",
+      "url": "https://pytorch.org/docs/stable/notes/serialization.html",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/data_governance/dataset_provenance.md",
+      "source_id": "ml_security_dataset_provenance",
+      "title": "Dataset Provenance and Training-Data Integrity",
+      "domain": "ml_security",
+      "topic": "dataset_provenance",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/evaluation/robust_evaluation.md",
+      "source_id": "ml_security_robust_evaluation",
+      "title": "Robust and Security-Oriented ML Evaluation",
+      "domain": "ml_security",
+      "topic": "robust_ml_evaluation",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/foundations/adversarial_ml.md",
+      "source_id": "ml_security_adversarial_ml",
+      "title": "Adversarial Machine Learning Fundamentals",
+      "domain": "ml_security",
+      "topic": "adversarial_machine_learning",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/inference_attacks/evasion_attacks.md",
+      "source_id": "ml_security_evasion",
+      "title": "Evasion Attacks and Adversarial Examples",
+      "domain": "ml_security",
+      "topic": "evasion_attacks",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/model_confidentiality/model_extraction.md",
+      "source_id": "ml_security_model_extraction",
+      "title": "Model Extraction and Model Stealing",
+      "domain": "ml_security",
+      "topic": "model_extraction",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/privacy/membership_inference.md",
+      "source_id": "ml_security_membership_inference",
+      "title": "Membership Inference",
+      "domain": "ml_security",
+      "topic": "membership_inference",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/privacy/model_inversion.md",
+      "source_id": "ml_security_model_inversion",
+      "title": "Model Inversion and Sensitive Attribute Recovery",
+      "domain": "ml_security",
+      "topic": "model_inversion",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/supply_chain/model_supply_chain.md",
+      "source_id": "ml_security_model_supply_chain",
+      "title": "ML Model and Artifact Supply-Chain Security",
+      "domain": "ml_security",
+      "topic": "model_supply_chain",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/threat_modeling/threat_modeling.md",
+      "source_id": "ml_security_threat_modeling",
+      "title": "Threat Modeling for Machine Learning Systems",
+      "domain": "ml_security",
+      "topic": "ml_threat_modeling",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/training_attacks/backdoor_attacks.md",
+      "source_id": "ml_security_backdoors",
+      "title": "Backdoor and Trojan Attacks in ML Models",
+      "domain": "ml_security",
+      "topic": "backdoor_attacks",
+      "url": "https://atlas.mitre.org/",
+      "license": "reference-only"
+    },
+    {
+      "path": "data/raw/ml_security/training_attacks/data_poisoning.md",
+      "source_id": "ml_security_data_poisoning",
+      "title": "Training Data Poisoning",
+      "domain": "ml_security",
+      "topic": "data_poisoning",
+      "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "license": "reference-only"
     },
     {
       "path": "data/raw/mlops/mlflow/model_registry.md",
