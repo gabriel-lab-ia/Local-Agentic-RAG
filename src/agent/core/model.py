@@ -65,6 +65,7 @@ def request_tool_call(
             "prompt": build_tool_prompt(task),
             "stream": False,
             "format": "json",
+            "think": False,
             "options": {
                 "temperature": 0.0,
                 "num_ctx": 4096,
