@@ -12,3 +12,11 @@ wheels/
 # Local secrets and runtime logs
 .env
 logs/
+
+# Local vector databases and backups
+data/chroma/
+data/chroma-backup-*/
+data/archive/
+
+# Generated ingestion reports
+data/processed/*.json
