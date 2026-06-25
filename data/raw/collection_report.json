@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-24T21:41:57.974978+00:00",
+  "sources_requested": 4,
+  "sources_collected": 4,
+  "sources_failed": 0,
+  "documents": [
+    {
+      "source_id": "pytorch_basics",
+      "domain": "pytorch",
+      "topic": "fundamentals",
+      "title": "Learn the Basics",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "source_type": "official_documentation",
+      "hostname": "docs.pytorch.org",
+      "collected_at": "2026-06-24T21:41:54.523218+00:00",
+      "content_file": "data/raw/pytorch/pytorch_basics.md",
+      "character_count": 1892,
+      "word_count": 317
+    },
+    {
+      "source_id": "pytorch_dqn",
+      "domain": "reinforcement_learning",
+      "topic": "dqn",
+      "title": "Reinforcement Learning (DQN) Tutorial",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "source_type": "official_documentation",
+      "hostname": "docs.pytorch.org",
+      "collected_at": "2026-06-24T21:41:55.756295+00:00",
+      "content_file": "data/raw/reinforcement_learning/pytorch_dqn.md",
+      "character_count": 18330,
+      "word_count": 2988
+    },
+    {
+      "source_id": "torchrl_docs",
+      "domain": "reinforcement_learning",
+      "topic": "torchrl",
+      "title": "TorchRL",
+      "url": "https://docs.pytorch.org/rl/stable/",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "source_type": "official_documentation",
+      "hostname": "docs.pytorch.org",
+      "collected_at": "2026-06-24T21:41:56.863190+00:00",
+      "content_file": "data/raw/reinforcement_learning/torchrl_docs.md",
+      "character_count": 9526,
+      "word_count": 1281
+    },
+    {
+      "source_id": "gymnasium_docs",
+      "domain": "reinforcement_learning",
+      "topic": "environments",
+      "title": "An API standard for reinforcement learning with a diverse collection of reference environments",
+      "url": "https://gymnasium.farama.org/",
+      "license": "MIT",
+      "language": "en",
+      "source_type": "official_documentation",
+      "hostname": "gymnasium.farama.org",
+      "collected_at": "2026-06-24T21:41:57.974869+00:00",
+      "content_file": "data/raw/reinforcement_learning/gymnasium_docs.md",
+      "character_count": 1095,
+      "word_count": 183
+    }
+  ],
+  "failures": []
+}

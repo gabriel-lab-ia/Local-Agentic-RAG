@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "pytorch_basics",
+      "domain": "pytorch",
+      "topic": "fundamentals",
+      "title": "PyTorch Tutorials - Learn the Basics",
+      "source_type": "official_documentation",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "id": "pytorch_dqn",
+      "domain": "reinforcement_learning",
+      "topic": "dqn",
+      "title": "Reinforcement Learning DQN Tutorial",
+      "source_type": "official_documentation",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "id": "torchrl_docs",
+      "domain": "reinforcement_learning",
+      "topic": "torchrl",
+      "title": "TorchRL Documentation",
+      "source_type": "official_documentation",
+      "url": "https://docs.pytorch.org/rl/stable/",
+      "license": "BSD-3-Clause",
+      "language": "en",
+      "enabled": true
+    },
+    {
+      "id": "gymnasium_docs",
+      "domain": "reinforcement_learning",
+      "topic": "environments",
+      "title": "Gymnasium Documentation",
+      "source_type": "official_documentation",
+      "url": "https://gymnasium.farama.org/",
+      "license": "MIT",
+      "language": "en",
+      "enabled": true
+    }
+  ]
+}

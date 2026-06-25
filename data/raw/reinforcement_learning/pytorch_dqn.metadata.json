@@ -1,0 +1,15 @@
+{
+  "source_id": "pytorch_dqn",
+  "domain": "reinforcement_learning",
+  "topic": "dqn",
+  "title": "Reinforcement Learning (DQN) Tutorial",
+  "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+  "license": "BSD-3-Clause",
+  "language": "en",
+  "source_type": "official_documentation",
+  "hostname": "docs.pytorch.org",
+  "collected_at": "2026-06-24T21:41:55.756295+00:00",
+  "content_file": "data/raw/reinforcement_learning/pytorch_dqn.md",
+  "character_count": 18330,
+  "word_count": 2988
+}

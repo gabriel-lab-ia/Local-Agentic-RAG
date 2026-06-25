@@ -1,0 +1,57 @@
+{
+  "collection": "ai_engineering_knowledge",
+  "embedding_model": "embeddinggemma",
+  "documents_processed": 4,
+  "chunks_generated": 59,
+  "collection_count": 59,
+  "chunk_size": 1400,
+  "chunk_overlap": 220,
+  "domains": {
+    "pytorch": 4,
+    "reinforcement_learning": 55
+  },
+  "sources": {
+    "pytorch_basics": 4,
+    "gymnasium_docs": 6,
+    "pytorch_dqn": 35,
+    "torchrl_docs": 14
+  },
+  "documents": [
+    {
+      "path": "data/raw/pytorch/pytorch_basics.md",
+      "source_id": "pytorch_basics",
+      "title": "Learn the Basics",
+      "domain": "pytorch",
+      "topic": "fundamentals",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/reinforcement_learning/gymnasium_docs.md",
+      "source_id": "gymnasium_docs",
+      "title": "An API standard for reinforcement learning with a diverse collection of reference environments",
+      "domain": "reinforcement_learning",
+      "topic": "environments",
+      "url": "https://gymnasium.farama.org/",
+      "license": "MIT"
+    },
+    {
+      "path": "data/raw/reinforcement_learning/pytorch_dqn.md",
+      "source_id": "pytorch_dqn",
+      "title": "Reinforcement Learning (DQN) Tutorial",
+      "domain": "reinforcement_learning",
+      "topic": "dqn",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "data/raw/reinforcement_learning/torchrl_docs.md",
+      "source_id": "torchrl_docs",
+      "title": "TorchRL",
+      "domain": "reinforcement_learning",
+      "topic": "torchrl",
+      "url": "https://docs.pytorch.org/rl/stable/",
+      "license": "BSD-3-Clause"
+    }
+  ]
+}

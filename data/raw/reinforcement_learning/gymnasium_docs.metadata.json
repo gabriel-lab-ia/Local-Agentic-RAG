@@ -1,0 +1,15 @@
+{
+  "source_id": "gymnasium_docs",
+  "domain": "reinforcement_learning",
+  "topic": "environments",
+  "title": "An API standard for reinforcement learning with a diverse collection of reference environments",
+  "url": "https://gymnasium.farama.org/",
+  "license": "MIT",
+  "language": "en",
+  "source_type": "official_documentation",
+  "hostname": "gymnasium.farama.org",
+  "collected_at": "2026-06-24T21:41:57.974869+00:00",
+  "content_file": "data/raw/reinforcement_learning/gymnasium_docs.md",
+  "character_count": 1095,
+  "word_count": 183
+}
