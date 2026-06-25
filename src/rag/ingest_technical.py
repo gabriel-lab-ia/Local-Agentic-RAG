@@ -25,9 +25,11 @@ SUPPORTED_DOMAINS = {
     "python",
     "pytorch",
     "machine_learning",
+    "deep_learning",
     "reinforcement_learning",
+    "mlops",
+    "llmops",
     "agentic_ai",
-    "llmops_mlops",
 }
 
 CHUNK_SIZE = 1400
@@ -96,7 +98,7 @@ def discover_markdown_files() -> list[Path]:
         if not domain_dir.exists():
             continue
 
-        files.extend(sorted(domain_dir.glob("*.md")))
+        files.extend(sorted(domain_dir.rglob("*.md")))
 
     return files
 
@@ -108,9 +110,14 @@ def load_document(path: Path) -> TechnicalDocument:
     if not content.strip():
         raise ValueError(f"Documento vazio: {path}")
 
-    metadata.setdefault("source_id", path.stem)
+    relative_path = path.relative_to(RAW_DATA_DIR)
+    domain = relative_path.parts[0]
+
+    default_source_id = "_".join(relative_path.with_suffix("").parts)
+
+    metadata.setdefault("source_id", default_source_id)
     metadata.setdefault("title", path.stem.replace("_", " ").title())
-    metadata.setdefault("domain", path.parent.name)
+    metadata.setdefault("domain", domain)
     metadata.setdefault("topic", "general")
     metadata.setdefault("url", "")
     metadata.setdefault("license", "unknown")
