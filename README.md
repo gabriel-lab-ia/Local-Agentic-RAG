@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="docs/assets/local-agentic-rag-banner.svg" alt="Local Agentic RAG — secure local RAG and agentic AI engineering platform" width="100%" />
-</p>
 
 # Local Agentic RAG
 
