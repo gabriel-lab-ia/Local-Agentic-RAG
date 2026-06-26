@@ -8,6 +8,23 @@ from src.agent.policies.paths import resolve_workspace_path
 MAX_FILE_BYTES = 256_000
 MAX_DIRECTORY_ENTRIES = 500
 MAX_SEARCH_RESULTS = 100
+IGNORED_DIRECTORY_NAMES = {
+    ".git",
+    ".venv",
+    "__pycache__",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".mypy_cache",
+    "logs",
+    "outputs",
+    "artifacts",
+    "checkpoints",
+    "models",
+}
+IGNORED_DIRECTORY_PREFIXES = {
+    ("data", "chroma"),
+    ("data", "processed"),
+}
 
 
 def list_directory(
@@ -93,22 +110,13 @@ def search_code(
     normalized_query = query.casefold()
     matches: list[dict[str, object]] = []
 
-    ignored_directories = {
-        ".git",
-        ".venv",
-        "__pycache__",
-        ".pytest_cache",
-        ".ruff_cache",
-        "data/chroma",
-    }
-
     for candidate in root.rglob("*"):
         if len(matches) >= MAX_SEARCH_RESULTS:
             break
 
         relative = candidate.relative_to(workspace.resolve())
 
-        if any(ignored in relative.parts for ignored in ignored_directories):
+        if _is_ignored_path(relative):
             continue
 
         if not candidate.is_file():
@@ -143,3 +151,14 @@ def search_code(
         "matches": matches,
         "truncated": len(matches) >= MAX_SEARCH_RESULTS,
     }
+
+
+def _is_ignored_path(relative: Path) -> bool:
+    if any(part in IGNORED_DIRECTORY_NAMES for part in relative.parts):
+        return True
+
+    for prefix in IGNORED_DIRECTORY_PREFIXES:
+        if relative.parts[: len(prefix)] == prefix:
+            return True
+
+    return False

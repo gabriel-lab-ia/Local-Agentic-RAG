@@ -64,6 +64,26 @@ def test_search_code_returns_matching_lines(
     ]
 
 
+def test_search_code_ignores_local_vector_store(
+    tmp_path: Path,
+) -> None:
+    chroma_dir = tmp_path / "data" / "chroma"
+    chroma_dir.mkdir(parents=True)
+    (chroma_dir / "chroma.sqlite3").write_text("agentic secret", encoding="utf-8")
+    safe_file = tmp_path / "notes.md"
+    safe_file.write_text("agentic public note", encoding="utf-8")
+
+    result = search_code(tmp_path, "agentic")
+
+    assert result["matches"] == [
+        {
+            "path": "notes.md",
+            "line": 1,
+            "text": "agentic public note",
+        }
+    ]
+
+
 def test_registry_executes_read_file(tmp_path: Path) -> None:
     (tmp_path / "README.md").write_text(
         "private agent",
