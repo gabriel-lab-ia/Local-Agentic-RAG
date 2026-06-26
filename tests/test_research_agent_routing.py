@@ -20,10 +20,7 @@ class StaticLocalRetriever:
 
 
 def deterministic_answer(question: str, sources: list[Source]) -> str:
-    citations = " ".join(
-        f"[Fonte {index}]"
-        for index in range(1, len(sources) + 1)
-    )
+    citations = " ".join(f"[Fonte {index}]" for index in range(1, len(sources) + 1))
     return f"Resposta para: {question}. {citations}".strip()
 
 

@@ -101,7 +101,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/observability/error_handling.md": dedent(
         """
         ---
@@ -201,7 +200,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/performance/profiling.md": dedent(
         """
         ---
@@ -293,7 +291,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/performance/memory_management.md": dedent(
         """
         ---
@@ -383,7 +380,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/packaging/pyproject.md": dedent(
         """
         ---
@@ -462,7 +458,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/packaging/dependency_management.md": dedent(
         """
         ---
@@ -539,7 +534,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/security/secure_python_services.md": dedent(
         """
         ---

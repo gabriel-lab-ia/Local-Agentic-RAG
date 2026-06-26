@@ -169,7 +169,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/machine_learning/sklearn/model_selection.md": dedent(
         """
         ---
@@ -310,7 +309,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/machine_learning/sklearn/cross_validation.md": dedent(
         """
         ---
@@ -463,7 +461,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/machine_learning/sklearn/pipelines.md": dedent(
         """
         ---
@@ -620,7 +617,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/deep_learning/pytorch/autograd.md": dedent(
         """
         ---
@@ -760,7 +756,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/deep_learning/pytorch/neural_networks.md": dedent(
         """
         ---
@@ -922,7 +917,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/deep_learning/pytorch/optimization.md": dedent(
         """
         ---

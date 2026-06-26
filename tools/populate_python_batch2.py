@@ -156,7 +156,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/language/iterators_generators.md": dedent(
         """
         ---
@@ -284,7 +283,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/concurrency/asyncio.md": dedent(
         """
         ---
@@ -424,7 +422,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/concurrency/threads_processes.md": dedent(
         """
         ---
@@ -524,7 +521,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/concurrency/concurrent_futures.md": dedent(
         """
         ---
@@ -634,7 +630,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/testing/pytest_fixtures.md": dedent(
         """
         ---
@@ -752,7 +747,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/python/testing/parametrization_contracts.md": dedent(
         """
         ---

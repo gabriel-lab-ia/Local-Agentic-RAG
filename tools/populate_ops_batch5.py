@@ -116,7 +116,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/mlops/mlflow/model_registry.md": dedent(
         """
         ---
@@ -224,7 +223,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/mlops/mlflow/model_serving.md": dedent(
         """
         ---
@@ -343,7 +341,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/llmops/rag/evaluation.md": dedent(
         """
         ---
@@ -468,7 +465,6 @@ DOCUMENTS = {
         """
     ).strip()
     + "\n",
-
     "data/raw/llmops/observability/tracing.md": dedent(
         """
         ---

@@ -90,13 +90,14 @@ class ResearchAnswer:
 
 
 class AnswerGenerator(Protocol):
-    def __call__(self, question: str, sources: list[Source]) -> str:
-        ...
+    def __call__(self, question: str, sources: list[Source]) -> str: ...
 
 
 @dataclass
 class ResearchPolicy:
-    source_selection: SourceSelectionPolicy = field(default_factory=SourceSelectionPolicy)
+    source_selection: SourceSelectionPolicy = field(
+        default_factory=SourceSelectionPolicy
+    )
     local_top_k: int = 5
     web_max_results: int = 5
     log_path: Path | None = Path("logs/research_agent.jsonl")
@@ -323,7 +324,9 @@ ou execução Python.
 
 
 def _quality(answer: str, sources: list[Source]) -> dict[str, float | int | str]:
-    cited = sum(1 for index in range(1, len(sources) + 1) if f"[Fonte {index}]" in answer)
+    cited = sum(
+        1 for index in range(1, len(sources) + 1) if f"[Fonte {index}]" in answer
+    )
     citation_coverage = cited / len(sources) if sources else 0.0
     return {
         "source_count": len(sources),
@@ -347,7 +350,9 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     question = args.question or input("Pergunta: ").strip()
-    policy = ResearchPolicy(log_path=None if args.no_log else Path("logs/research_agent.jsonl"))
+    policy = ResearchPolicy(
+        log_path=None if args.no_log else Path("logs/research_agent.jsonl")
+    )
     agent = ResearchAgent(policy=policy)
     result = agent.answer(question)
 

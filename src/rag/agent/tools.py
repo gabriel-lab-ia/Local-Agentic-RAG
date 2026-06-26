@@ -23,22 +23,19 @@ from src.rag.chat_technical import (
 
 
 class LocalRetriever(Protocol):
-    def search(self, query: str, top_k: int = DEFAULT_TOP_K) -> list[Source]:
-        ...
+    def search(self, query: str, top_k: int = DEFAULT_TOP_K) -> list[Source]: ...
 
 
 class WebSearchTool(Protocol):
     name: str
 
-    def search(self, query: str, max_results: int = 5) -> list[Source]:
-        ...
+    def search(self, query: str, max_results: int = 5) -> list[Source]: ...
 
 
 class PythonTool(Protocol):
     name: str
 
-    def run(self, query: str) -> Source:
-        ...
+    def run(self, query: str) -> Source: ...
 
 
 @dataclass
@@ -140,9 +137,7 @@ def _extract_math_expression(query: str) -> str | None:
     candidate = query.replace("^", "**").replace(",", "")
     matches = re.findall(r"[-+*/().%\d\s]+", candidate)
     expressions = [
-        match.strip()
-        for match in matches
-        if any(char.isdigit() for char in match)
+        match.strip() for match in matches if any(char.isdigit() for char in match)
     ]
     if not expressions:
         return None

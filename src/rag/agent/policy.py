@@ -78,7 +78,9 @@ class SourceSelectionPolicy:
     def classify(self, query: str) -> dict[str, bool]:
         normalized = query.casefold()
         term_count = len(normalized.split())
-        has_math_operator = any(operator in normalized for operator in ["+", "-", "*", "/", "%", "```"])
+        has_math_operator = any(
+            operator in normalized for operator in ["+", "-", "*", "/", "%", "```"]
+        )
 
         return {
             "recent": _contains_any(normalized, RECENT_TERMS),

@@ -43,6 +43,5 @@ class Source:
 
 def build_cited_context(sources: list[Source]) -> str:
     return "\n\n---\n\n".join(
-        source.to_context_block(index)
-        for index, source in enumerate(sources, start=1)
+        source.to_context_block(index) for index, source in enumerate(sources, start=1)
     )
