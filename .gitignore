@@ -1,22 +1,45 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
 # Virtual environments
-.venv
+.venv/
 
-# Local secrets and runtime logs
+# Local secrets and environment files
 .env
-logs/
+.env.*
+!.env.example
 
-# Local vector databases and backups
+# Tooling caches and coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local runtime output
+logs/
+outputs/
+artifacts/
+checkpoints/
+
+# Local model artifacts and weights
+models/
+*.gguf
+*.safetensors
+*.pt
+*.pth
+
+# Local vector databases, backups, and generated reports
 data/chroma/
 data/chroma-backup-*/
 data/archive/
-
-# Generated ingestion reports
 data/processed/*.json
+
+# Editor and OS noise
+.DS_Store
+.vscode/
