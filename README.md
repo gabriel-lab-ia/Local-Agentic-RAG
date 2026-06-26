@@ -2,7 +2,7 @@
 # Local Agentic RAG
 <img width="2172" height="724" alt="image" src="https://github.com/user-attachments/assets/1bbef4f8-3a55-4ecd-989f-e4d673d44120" />
 
-Secure local RAG and agentic AI engineering system powered by Qwen, Ollama, EmbeddingGemma and ChromaDB.
+### Secure local RAG and agentic AI engineering system powered by Qwen, Ollama, EmbeddingGemma and ChromaDB.
 
 ![JSON](https://img.shields.io/badge/JSON-strict%20tool%20contract-111827)
 ![Linux](https://img.shields.io/badge/Linux-local%20runtime-111827)
