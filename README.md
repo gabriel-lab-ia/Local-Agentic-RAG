@@ -1,8 +1,10 @@
+<p align="center">
+  <img src="docs/assets/local-agentic-rag-banner.svg" alt="Local Agentic RAG — secure local RAG and agentic AI engineering platform" width="100%" />
+</p>
+
 # Local Agentic RAG
 
 Secure local RAG and agentic AI engineering system powered by Qwen, Ollama, EmbeddingGemma and ChromaDB.
-
-> Banner asset pending generation. See [docs/assets/README_ASSET_SPEC.md](docs/assets/README_ASSET_SPEC.md) for the exact visual specification.
 
 ![JSON](https://img.shields.io/badge/JSON-strict%20tool%20contract-111827)
 ![Linux](https://img.shields.io/badge/Linux-local%20runtime-111827)

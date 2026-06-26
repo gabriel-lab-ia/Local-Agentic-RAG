@@ -1,5 +1,7 @@
 # README Banner Asset Specification
 
+> Status: implemented in [`local-agentic-rag-banner.svg`](local-agentic-rag-banner.svg).
+
 Create a professional banner for Local Agentic RAG.
 
 ## Concept
@@ -24,10 +26,10 @@ Create a professional banner for Local Agentic RAG.
 
 ## Usage
 
-Place the generated image at:
+The implemented image is available at:
 
 ```text
-docs/assets/local-agentic-rag-banner.png
+docs/assets/local-agentic-rag-banner.svg
 ```
 
-Then update `README.md` to reference that PNG.
+`README.md` references the SVG directly and no longer points to this specification.
