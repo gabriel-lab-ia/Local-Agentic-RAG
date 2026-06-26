@@ -1,7 +1,7 @@
 [project]
-name = "private-qwen-training"
+name = "local-agentic-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "Secure local RAG and agentic AI engineering system powered by Qwen, Ollama, EmbeddingGemma and ChromaDB."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -32,3 +32,7 @@ dev = [
 pythonpath = [
     ".",
 ]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
